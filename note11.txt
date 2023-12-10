@@ -1,0 +1,19 @@
+npm i express mongoose jsonwebtoken bcryptjs cloudinary 
+
+npm i nodemon dotenv
+
+
+https://downloads.mongodb.com/compass/mongodb-compass-1.40.4-win32-x64.msi
+
+
+X6WrnzB?T36&29P
+
+P@ssWord2024
+
+
+
+
+4iir2024
+
+
+G4NXH3gNOsXD31s9

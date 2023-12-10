@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Divider, Form, Input } from "antd";
+import { Button,  Form, Input } from "antd";
+import Divider from "../../components/Divider";
 import { Link } from "react-router-dom";
 
 function Register() {
@@ -39,7 +40,7 @@ function Register() {
           <div className="mt-5 text-center">
             <span className="text-gray-500">
               Already have an account?{" "}
-              <Link href="/login" className="text-primary">
+              <Link to="/login" className="text-primary">
                 Login
               </Link>
             </span>

@@ -10,6 +10,8 @@ X6WrnzB?T36&29P
 
 P@ssWord2024
 
+npx nodemon server/server
+
 
 
 

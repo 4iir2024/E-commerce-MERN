@@ -1,17 +1,26 @@
 import React from "react";
-import { Button,  Form, Input } from "antd";
+import { Button, Form, Input, message } from "antd";
 import Divider from "../../components/Divider";
 import { Link } from "react-router-dom";
-
+import { RegisterUser } from "../../apicalls/users";
+const rules = [
+  {
+    required: true,
+    message: "required",
+  },
+];
 function Register() {
-  const rules = [
-    {
-      required: true,
-      message: "required",
-    },
-  ];
-  const onFinish = (value) => {
-    console.log("Success", value);
+  const onFinish = async (values) => {
+    try {
+      const response = await RegisterUser(values);
+      if (response.success) {
+        message.success(response.message);
+      } else {
+        throw new Error(response.message);
+      }
+    } catch (error) {
+      message.error(error.message);
+    }
   };
   return (
     <div className="h-screen bg-primary flex justify-center items-center">
